@@ -2,4 +2,102 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary: #08a6e4;
+    --color-primary-shadow: rgba(7, 172, 230, 0.16);
+    --color-redish: #fb3b64;
+    --color-green: #55dfb4;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #a5a5a5;
+    --color-light-grey: #f7f7f7;
+    --button-radius: 35px;
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+}
+.header{
+    width: 100vw;
+    min-height: 900px;
+    background-image: url(../assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+.nav{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 140px 0 140px;
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: var(--color-white);
+}
+.nav__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    height: 100%;
+    width: auto;
+}
+.menu__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    position: relative;
+}
+.menu__list:hover{
+    color: var(--color-black);
+    box-shadow: 0px -3px 0px 0px var(--color-primary) inset;
+    transition: 0.5s;
+}
+.logo__text{
+    font-family: var(--font-raleway);
+    font-size: 32px;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 300;
+}
+.menu__list {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-grey);
+    letter-spacing: 3px;
+}
+.header__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+}
+.header__content-heading{
+    color: var(--color-black);
+    font-size: 50px;
+    font-family: var(--font-raleway);
+}
+.header__content-text{
+    padding-top: 20px;
+    color: var(--color-black);
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+}
+.header__content-button{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    width: 440px;
+    height: 67px;
+    border-radius: var(--button-radius);
+    background-color: var(--color-primary);
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: var(--font-open-sans);
 }
