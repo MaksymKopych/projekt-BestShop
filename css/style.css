@@ -24,6 +24,8 @@
     width: 100%;
     height: auto;
     background-color: var(--color-white);
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: var(--color-white);
 }
 .nav{
     width: 1352px;
@@ -32,8 +34,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 140px 0 140px;
-    box-shadow: 0px 3px 6px #00000029;
-    background-color: var(--color-white);
+   
 }
 .nav__menu{
     display: flex;
@@ -107,7 +108,9 @@
 }
 
 
-
+.section__one{
+    margin-top: 100px;
+}
 .section__one-container{
     display: flex;
     flex-direction: row;
@@ -120,14 +123,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 0 120px 0;
+    padding: 70px 0 70px 0;
 }
 .one__heading{
     text-align: center;
     color: var(--color-black);
     font-size: 36px;
     font-family: var(--font-raleway);
-    padding: 100px 0 0 0;
 }
 .section__img{
     display: flex;
@@ -175,7 +177,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    padding: 50px 150px;
+    padding: 80px 100px 100px;
+    margin-bottom: 80px;
 }
 .container{
     width: 1352px;
@@ -306,15 +309,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 90px;
-    
+    margin-bottom: 100px;
 }
 .section__three-heading{
     text-align: center;
     font-size: 36px;
     font-family: var(--font-raleway);
     color: var(--color-black);
-    padding: 100px 0 50px 0;
+    padding: 0 0 50px 0;
 }
 .pricing__containers{
     display: flex;
@@ -421,7 +423,7 @@
 .contact{
     display: flex;
     padding: 80px 100px 100px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 .contact__text, .form{
     width:50%;
@@ -516,4 +518,29 @@
     box-shadow: 3px 10px 14px var(--color-primary-shadow);
     right: 100px;
     bottom: -25px;
+    padding: 20px 97px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px -5px 40px var(--color-grey);
+    padding: 15px 0 15px 0;
+}
+.footer__container{
+    width: 1352px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__text{
+    font-size: 11px;
+    font-family: var(--font-open-sans);
+    color: var(--color-grey);
+    padding-top: 10px;
+}
+.footer__link{
+    display: flex;
+    gap: 20px;
 }
