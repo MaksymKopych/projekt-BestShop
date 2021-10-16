@@ -3,6 +3,8 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
 }
 :root{
     --color-primary: #08a6e4;
@@ -19,13 +21,15 @@
     font-size: 16px;
 }
 .header{
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: auto;
+    height: 70px;
     background-color: var(--color-white);
     box-shadow: 0px 3px 6px #00000029;
-    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    z-index: 10000;
 }
 .nav{
     width: 1352px;
@@ -34,27 +38,30 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 140px 0 140px;
-   
+    background-color: var(--color-white);
 }
-.menu__nav{
+.menu{
     display: flex;
     flex-direction: row;
     gap: 50px;
     height: 100%;
     width: auto;
 }
-.menu-list{
+.menu-link{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: auto;
     position: relative;
+    text-transform: uppercase;
+    color: var(--color-grey);
+    letter-spacing: 3px;
 }
-.menu-list:hover{
+.menu-link:hover{
     color: var(--color-black);
     box-shadow: 0px -3px 0px 0px var(--color-primary) inset;
-    transition: 0.5s;
+    
 }
 .logo__text{
     font-family: var(--font-raleway);
@@ -62,12 +69,6 @@
     color: var(--color-primary);
     text-decoration: none;
     font-weight: 300;
-}
-.menu-list {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--color-grey);
-    letter-spacing: 3px;
 }
 .header-content{
     display: flex;
@@ -135,7 +136,7 @@
     display: flex;
     position: relative;
 }
-.section-cicle{
+.section-img__cicle{
     height: 63px;
     width: 63px;
     border-radius: 50%;
@@ -149,7 +150,7 @@
 .cicle__three{
     background-color: var(--color-green);
 }
-.cicle__img{
+.section-img__img{
     position: absolute;
     left: 35px;
 }
@@ -533,6 +534,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
 }
 .footer-text{
     font-size: 11px;
