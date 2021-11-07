@@ -1,0 +1,107 @@
+.section__three {
+  @include centrowanie;
+  margin-bottom: 100px;
+}
+.section__three-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: var(--font-raleway);
+  color: var(--color-black);
+  padding: 0 0 50px 0;
+}
+.pricing__containers {
+  @include centrowanie;
+  justify-content: space-between;
+  width: 100%;
+}
+.pricing__container {
+  @include centrowanie;
+  flex-direction: column;
+  min-width: 372px;
+  min-height: 461px;
+  border-radius: 18px;
+  position: relative;
+  font-size: 16px;
+}
+.pricing__container-one {
+  border: 1px solid var(--color-redish);
+}
+.pricing__type {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--color-black);
+  font-family: var(--font-raleway);
+  padding: 35px 0 35px 0;
+}
+.pricing__price {
+  font-size: 2.875rem;
+  font-family: var(--font-open-sans);
+  color: var(--color-redish);
+  font-weight: 300;
+  padding-bottom: 70px;
+}
+.pricing__item {
+  font-size: 0.875rem;
+  font-family: var(--font-open-sans);
+  color: var(--color-black);
+  padding: 5px;
+  text-align: center;
+}
+.item__img {
+  padding-right: 10px;
+}
+.btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  border-radius: 23px;
+  background-color: var(--color-redish);
+  text-decoration: none;
+  color: var(--color-white);
+  bottom: -25px;
+}
+.pricing__container-two {
+  border: 1px solid var(--color-primary);
+  min-width: 405px;
+  min-height: 500px;
+}
+.prise__two {
+  color: var(--color-primary);
+  position: relative;
+}
+.prise__two::before {
+  content: "Limited offer";
+  position: absolute;
+  color: var(--color-black);
+  font-size: 0.75rem;
+  font-family: var(--font-raleway);
+  font-weight: bold;
+  bottom: 45px;
+  left: 3px;
+}
+.pricing__container-two .btn {
+  background-color: var(--color-primary);
+}
+.pricing__container-three {
+  border: 1px solid var(--color-green);
+}
+.pricing__container-three .btn {
+  background-color: var(--color-green);
+}
+.prise__three {
+  color: var(--color-green);
+  position: relative;
+}
+.prise__three::before {
+  content: "Limited offer";
+  position: absolute;
+  color: var(--color-black);
+  font-size: 12px;
+  font-family: var(--font-raleway);
+  font-weight: bold;
+  bottom: 45px;
+  left: 3px;
+}

@@ -1,0 +1,25 @@
+@import "variables";
+@import "header";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "contact";
+@import "footer";
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.container {
+  width: 100%;
+  max-width: 1352px;
+  min-height: 370px;
+  @include centrowanie;
+  flex-direction: column;
+  @include tablet {
+    width: 100%;
+  }
+}
