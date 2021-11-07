@@ -35,6 +35,16 @@
   align-items: center;
   margin-top: 130px;
 }
+@media screen and (max-width: 1352px) {
+  .header-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-content {
+    width: 100%;
+  }
+}
 .header-content__heading {
   color: var(--color-black);
   font-size: 50px;
@@ -60,6 +70,12 @@
   color: var(--color-white);
   font-size: 16px;
   font-family: var(--font-open-sans);
+}
+@media screen and (max-width: 992px) {
+  .header-content__button {
+    width: 100%;
+    font-size: 2rem;
+  }
 }
 
 .nav {
@@ -196,6 +212,12 @@
   min-height: 370px;
   background-color: var(--color-white);
 }
+@media screen and (max-width: 992px) {
+  .section-two-content {
+    width: 100vw;
+    flex-direction: column;
+  }
+}
 
 .benefits {
   gap: 30px;
@@ -208,6 +230,12 @@
   justify-content: center;
   flex-direction: column;
   gap: 40px;
+}
+@media screen and (max-width: 992px) {
+  .container__text {
+    width: 100vw;
+    padding: 0 30px;
+  }
 }
 .container__text-h2 {
   font-size: 36px;
@@ -295,16 +323,15 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 992px) {
+  .container__img-three {
+    width: 100vw;
+  }
+}
 
 .container__img-trumpet {
-  width: 30%;
-  height: 70%;
-  position: absolute;
-  background-image: url(../assets/Trumpet.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 35%;
+  width: 295px;
+  height: auto;
 }
 
 .container__text-three {
@@ -317,6 +344,7 @@
 .container__three {
   background: none;
   gap: 30px;
+  width: 100%;
 }
 
 .section__three {
@@ -340,6 +368,13 @@
   justify-content: center;
   justify-content: space-between;
   width: 100%;
+}
+@media screen and (max-width: 1352px) {
+  .pricing__containers {
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+  }
 }
 
 .pricing__container {
@@ -456,11 +491,28 @@
   justify-content: center;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 1352px) {
+  .contact {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact {
+    width: 100vw;
+  }
+}
 .contact-content {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 1352px;
+}
+@media screen and (max-width: 992px) {
+  .contact-content {
+    width: 100vw;
+    flex-direction: column;
+  }
 }
 
 .contact__text,
@@ -575,6 +627,14 @@
   bottom: -30%;
   padding: 20px 97px;
 }
+@media screen and (max-width: 992px) {
+  .send {
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-top: 50px;
+  }
+}
 
 .footer {
   width: 100%;
@@ -629,6 +689,7 @@
 @media screen and (max-width: 1352px) {
   .container {
     width: 100%;
+    padding: 30px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

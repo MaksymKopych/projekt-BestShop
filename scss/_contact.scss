@@ -1,8 +1,19 @@
 .contact {
   @include centrowanie;
+  @include tablet {
+    width: 100%;
+    padding: 0 30px;
+  }
+  @include mobile {
+    width: 100vw;
+  }
   &-content {
     @include centrowanie;
     max-width: 1352px;
+    @include mobile {
+      width: 100vw;
+      flex-direction: column;
+    }
   }
   margin-bottom: 100px;
 }
@@ -102,4 +113,10 @@
   right: 10%;
   bottom: -30%;
   padding: 20px 97px;
+  @include mobile {
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-top: 50px;
+  }
 }

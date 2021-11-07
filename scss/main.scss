@@ -2,7 +2,7 @@
 @import "header";
 @import "section1";
 @import "section2";
-@import "section3";
+@import "price";
 @import "contact";
 @import "footer";
 * {
@@ -21,5 +21,6 @@
   flex-direction: column;
   @include tablet {
     width: 100%;
+    padding: 30px 0;
   }
 }

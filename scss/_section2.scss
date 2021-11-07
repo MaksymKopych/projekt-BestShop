@@ -10,6 +10,10 @@
     @include centrowanie;
     min-height: 370px;
     background-color: var(--color-white);
+    @include mobile {
+      width: 100vw;
+      flex-direction: column;
+    }
   }
 }
 .benefits {
@@ -22,6 +26,10 @@
   justify-content: center;
   flex-direction: column;
   gap: 40px;
+  @include mobile {
+    width: 100vw;
+    padding: 0 30px;
+  }
   &-h2 {
     font-size: 36px;
     color: var(--color-black);
@@ -99,16 +107,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mobile {
+    width: 100vw;
+  }
 }
 .container__img-trumpet {
-  width: 30%;
-  height: 70%;
-  position: absolute;
-  background-image: url(../assets/Trumpet.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 35%;
+  width: 295px;
+  height: auto;
 }
 .container__text-three {
   justify-content: center;
@@ -119,4 +124,5 @@
 .container__three {
   background: none;
   gap: 30px;
+  width: 100%;
 }
