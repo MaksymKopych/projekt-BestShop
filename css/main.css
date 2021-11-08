@@ -498,6 +498,7 @@ textarea {
   color: var(--color-black);
   font-size: 16px;
   font-family: var(--font-open-sans);
+  text-align: center;
 }
 .header-content__button {
   margin-top: 60px;
@@ -951,7 +952,7 @@ textarea {
 }
 @media screen and (max-width: 992px) {
   .container__text-three {
-    border-bottom: 30px solid var(--color-light-grey);
+    padding: 0 10px 0 20px;
   }
 }
 .container__three {
@@ -1107,13 +1108,13 @@ textarea {
 @media screen and (max-width: 1352px) {
   .pricing__container-two {
     min-height: 350px;
-    width: calc(50% + 30px);
+    width: calc(50% + 20px);
   }
 }
 @media screen and (max-width: 992px) {
   .pricing__container-two {
     min-height: 250px;
-    width: calc(50% + 30px);
+    width: calc(50% + 20px);
   }
 }
 

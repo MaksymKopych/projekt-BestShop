@@ -162,7 +162,7 @@
     background-color: var(--color-white);
     padding: 0 0 0 50px;
     @include mobile {
-      border-bottom: 30px solid var(--color-light-grey);
+      padding: 0 10px 0 20px;
     }
   }
   &__three {
