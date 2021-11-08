@@ -10,6 +10,10 @@
 .section-one__container {
   display: flex;
   gap: 180px;
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .section-one__content {
   display: flex;
@@ -17,6 +21,9 @@
   justify-content: center;
   align-items: center;
   padding: 70px 0 70px 0;
+  @include mobile {
+    padding: 70px 0 0 0;
+  }
 }
 .one-heading {
   text-align: center;

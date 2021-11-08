@@ -27,6 +27,18 @@
   border-radius: 18px;
   position: relative;
   font-size: 16px;
+  @include tablet {
+    width: 50%;
+    min-height: 350px;
+
+    flex-direction: row;
+  }
+  @include mobile {
+    width: 50%;
+    min-height: 250px;
+
+    flex-direction: row;
+  }
 }
 .pricing__container-one {
   border: 1px solid var(--color-redish);
@@ -37,6 +49,14 @@
   color: var(--color-black);
   font-family: var(--font-raleway);
   padding: 35px 0 35px 0;
+  @include tablet {
+    padding: 20px;
+    margin-top: -30px;
+  }
+  @include mobile {
+    padding: 20px;
+    margin-top: -30px;
+  }
 }
 .pricing__price {
   font-size: 2.875rem;
@@ -44,6 +64,12 @@
   color: var(--color-redish);
   font-weight: 300;
   padding-bottom: 70px;
+  @include tablet {
+    padding: 20px;
+  }
+  @include mobile {
+    padding: 20px;
+  }
 }
 .pricing__item {
   font-size: 0.875rem;
@@ -67,15 +93,27 @@
   text-decoration: none;
   color: var(--color-white);
   bottom: -25px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .pricing__container-two {
   border: 1px solid var(--color-primary);
   min-width: 405px;
   min-height: 500px;
+  @include tablet {
+    min-height: 350px;
+    width: calc(50% + 30px);
+  }
+  @include mobile {
+    min-height: 250px;
+    width: calc(50% + 30px);
+  }
 }
 .prise__two {
   color: var(--color-primary);
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .prise__two::before {
   content: "Limited offer";
@@ -85,7 +123,15 @@
   font-family: var(--font-raleway);
   font-weight: bold;
   bottom: 45px;
-  left: 3px;
+  left: 20px;
+  @include tablet {
+    left: 20%;
+    bottom: 0;
+  }
+  @include mobile {
+    left: 20%;
+    bottom: 0;
+  }
 }
 .pricing__container-two .btn {
   background-color: var(--color-primary);
@@ -99,6 +145,8 @@
 .prise__three {
   color: var(--color-green);
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .prise__three::before {
   content: "Limited offer";
@@ -109,4 +157,12 @@
   font-weight: bold;
   bottom: 45px;
   left: 3px;
+  @include tablet {
+    left: 20%;
+    bottom: 0;
+  }
+  @include mobile {
+    left: 20%;
+    bottom: 0;
+  }
 }

@@ -15,6 +15,8 @@
     <header class="header">
         <nav class="nav">
             <a href="" class="logo__text">BestShop</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
                     <li class="menu-link">
                         <a class="menu-link" href="#whyUs">Why us</a>
@@ -91,8 +93,7 @@
                     <span class="strip__one"></span>
                 </div>
                 <div class="container__img">
-                    <span class="container__img-laptop"></span>
-                    <span class="container__img-square"></span>
+                    <div class="container__img-laptop"></div>
                 </div>
             </div>
             <div class="container__two section-two-content">
@@ -131,12 +132,15 @@
             </h1>
             <div class="pricing__containers">
                 <div class="pricing__container pricing__container-one">
-                    <div class="pricing__type">
-                        Basic
+                    <div class="prise-variable">
+                        <div class="pricing__type">
+                            Basic
+                        </div>
+                        <div class="pricing__price">
+                            $0
+                        </div>
                     </div>
-                    <div class="pricing__price">
-                        $0
-                    </div>
+                
                     <ul class="pricing__item">
                         <li class="pricing__item">
                             <img src="./assets/Checkmark-1.svg" class="item__img">
@@ -160,13 +164,15 @@
                         </li>
                     </ul>
                     <a href="" class="btn">Begin</a>
-            </div>
-            <div class="pricing__container pricing__container-two">
-                <div class="pricing__type">
-                    Professional
                 </div>
-                <div class="pricing__price prise__two">
-                    $25
+            <div class="pricing__container pricing__container-two">
+                <div class="prise-variable">
+                    <div class="pricing__type">
+                        Professional
+                    </div>
+                    <div class="pricing__price prise__two">
+                        $25
+                    </div>
                 </div>
                 <ul class="pricing__item">
                     <li class="pricing__item">
@@ -193,11 +199,13 @@
                 <a href="" class="btn">Begin</a>
             </div>
             <div class="pricing__container pricing__container-three">
-                <div class="pricing__type">
-                    Premium
-                </div>
-                <div class="pricing__price prise__three">
-                    $60
+                <div class="prise-variable">
+                    <div class="pricing__type">
+                        Premium
+                    </div>
+                    <div class="pricing__price prise__three">
+                        $60
+                    </div>
                 </div>
                 <ul class="pricing__item">
                     <li class="pricing__item">
@@ -222,6 +230,7 @@
                     </li>
                 </ul>
                 <a href="" class="btn">Begin</a>
+            </div>
             </div>
         </div>
     </div>
