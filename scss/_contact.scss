@@ -24,6 +24,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  @include mobile {
+    width: 100%;
+  }
 }
 .contact__text-heading {
   font-size: 49px;

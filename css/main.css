@@ -783,6 +783,12 @@
   flex-direction: column;
   position: relative;
 }
+@media screen and (max-width: 992px) {
+  .contact__text,
+.form {
+    width: 100%;
+  }
+}
 
 .contact__text-heading {
   font-size: 49px;
