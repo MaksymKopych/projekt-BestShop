@@ -1,3 +1,4 @@
+@import "resset";
 @import "variables";
 @import "header";
 @import "section1";
@@ -5,6 +6,7 @@
 @import "price";
 @import "contact";
 @import "footer";
+
 * {
   margin: 0;
   font-family: "Open Sans", sans-serif;
